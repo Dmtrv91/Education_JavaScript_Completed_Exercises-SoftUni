@@ -1,6 +1,6 @@
 
-function growingWord() 
-{
+function growingWord() {
+
   let p = document.querySelector('#exercise p');
   let currPx = p.style.fontSize.slice(0,-2) * 2 || 2;
   let blueDiv = document.getElementById('blueDiv');
@@ -10,8 +10,8 @@ function growingWord()
   let isGreen = greenDiv.getAttribute('active') === "true";
   let isRed = redDiv.getAttribute('active') === "true";
 
-    if(currPx === 2 || isBlue)
-    {
+    if(currPx === 2 || isBlue){
+      
       p.style.color = "blue";
       blueDiv.setAttribute("active", false);
       greenDiv.setAttribute("active", true);

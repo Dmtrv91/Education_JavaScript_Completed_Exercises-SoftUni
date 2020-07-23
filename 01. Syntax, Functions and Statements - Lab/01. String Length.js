@@ -1,5 +1,5 @@
-function calcLenght(string1, string2, string3) 
-{
+function calcLenght(string1, string2, string3) {
+    
     let sumLenght = (string1.lenght + string2.lenght + string3.lenght);
     let averageLenght = Math.floor(sumLenght / 3);
 

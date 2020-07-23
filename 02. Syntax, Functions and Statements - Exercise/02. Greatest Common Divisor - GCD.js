@@ -1,11 +1,11 @@
-function greatestCommonDivisor (x, y)
-{
+function greatestCommonDivisor (x, y){
+
     if ((typeof x !== 'number') || (typeof y !== 'number')) 
      return false;
      x = Math.abs(x);
      y = Math.abs(y);
-    while(y) 
-    {
+     
+    while(y) {
       var t = y;
       y = x % y;
       x = t;

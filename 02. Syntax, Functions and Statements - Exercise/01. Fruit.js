@@ -1,5 +1,5 @@
-function calculateKg(type, weight, pricePerkg) 
-{
+function calculateKg(type, weight, pricePerkg) {
+    
     let weightInKg = (weight/1000).toFixed(2);
     let money = (weightInKg*pricePerkg).toFixed(2);
     

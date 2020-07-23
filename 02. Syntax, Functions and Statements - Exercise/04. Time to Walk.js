@@ -1,5 +1,5 @@
-function TimeToWalk(arg1, arg2, arg3) 
-{
+function TimeToWalk(arg1, arg2, arg3) {
+
     let stepsNumber = Number(arg1);
     let stepsMetersHr = Number(arg2);
     let studentSpeed = Number(arg3);
@@ -16,7 +16,8 @@ function TimeToWalk(arg1, arg2, arg3)
   
     if (timeHr < 10) {
         console.log((timeHr < 10 ? "0" : "") + timeHr + ":" + (timeMin + rest < 10 ? "0" : "") + (timeMin + rest) + ":" + (timeSec < 10 ? "0" : "") + timeSec);
-    } else {
+    
+      } else {
       console.log(timeHr + ":" + (timeMin + rest) + ":" + timeSec);
     }
 }

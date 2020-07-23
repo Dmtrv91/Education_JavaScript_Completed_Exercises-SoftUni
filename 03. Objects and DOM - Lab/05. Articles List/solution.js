@@ -1,10 +1,10 @@
-function createArticle() 
-{
+function createArticle() {
+
     let titleArticle = document.getElementById('createTitle');
     let textArticle = document.getElementById('createContent');
 
-	if (titleArticle.value != '' && textArticle.value != '') 
-	{
+	if (titleArticle.value != '' && textArticle.value != '') {
+        
         let articleCreate = document.createElement('article');
         let section = document.getElementById('articles');
         section.appendChild(articleCreate);

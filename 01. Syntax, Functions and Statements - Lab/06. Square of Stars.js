@@ -1,9 +1,9 @@
 
-function squareOfStars([arg1])
-{
+function squareOfStars([arg1]){
+
     let n = Number(arg1);
-    for (let i = 0; i < n; i++) 
-    {
+    
+    for (let i = 0; i < n; i++) {
         console.log("* ".repeat(n));
     }
 }
