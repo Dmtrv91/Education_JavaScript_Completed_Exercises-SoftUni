@@ -1,4 +1,4 @@
-function solve() {
+function cards() {
    let p1CardIndex = null;
    let p2CardIndex = null;
    let p1CardValue = null;
@@ -6,6 +6,7 @@ function solve() {
    let cardHistory = [];
 
    let images = document.querySelectorAll('section.cards img');
+   
    for (let i = 0; i < images.length; i++) {
        images[i].addEventListener('click', function(e) {
            let currentImg = e.target;
