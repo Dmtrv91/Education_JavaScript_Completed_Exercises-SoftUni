@@ -1,4 +1,5 @@
 function cards() {
+   
    let p1CardIndex = null;
    let p2CardIndex = null;
    let p1CardValue = null;
@@ -14,11 +15,13 @@ function cards() {
            let imgName = +currentImg.name;
 
            const parentId = e.target.parentElement.id;
+          
            if (parentId === 'player1Div') {
                let player1Result = document.getElementsByTagName('span')[0];
                player1Result.textContent = imgName;
                p1CardValue = imgName;
                p1CardIndex = i;
+              
            } else if (parentId === 'player2Div') {
                let player2Result = document.getElementsByTagName('span')[2];
                player2Result.textContent = imgName;
@@ -30,16 +33,18 @@ function cards() {
                if (p1CardValue < p2CardValue) {
                    images[p1CardIndex].style.border = '2px solid red';
                    images[p2CardIndex].style.border = '2px solid green';
+                  
                } else if (p1CardValue > p2CardValue) {
                    images[p1CardIndex].style.border = '2px solid green';
                    images[p2CardIndex].style.border = '2px solid red';
                }
                cardHistory.push(`[${p1CardValue} vs ${p2CardValue}]`);
+              
                p1CardIndex = null;
                p2CardIndex = null;
                p1CardValue = null;
                p2CardValue = null;
-               // player1History = (Number(currentImg.name));
+
                let history = document.getElementById('history');
                history.textContent = cardHistory.join(' ') + ' ';
                console.log(cardHistory);
